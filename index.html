@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shuwen Wang — Columbia Business School</title>
+
+<!-- ============================================================ -->
+<!-- SEO / social preview. Update og:url + og:image once live.     -->
+<!-- ============================================================ -->
+<meta name="author" content="Shuwen Wang">
+<meta name="description" content="Shuwen Wang is a Ph.D. student in Finance at Columbia Business School. Research interests: financial intermediation, firm innovation, and credit markets.">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#1d4e89">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Shuwen Wang — Columbia Business School">
+<meta property="og:description" content="Ph.D. student in Finance at Columbia Business School. Financial intermediation, firm innovation, and credit markets.">
+<!-- <meta property="og:image" content="https://YOURDOMAIN.com/images/shuwen.jpg"> -->
+<!-- <meta property="og:url" content="https://YOURDOMAIN.com"> -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --ink:        #16202b;
+    --body:       #2c343d;
+    --muted:      #6b7682;
+    --accent:     #1d4e89;   /* Columbia-leaning deep blue */
+    --accent-lt:  #6CACE4;   /* Columbia blue, used sparingly */
+    --rule:       #e7e7e1;
+    --bg:         #fdfdfb;
+    --maxw:       720px;
+  }
+  *{ box-sizing:border-box; }
+  html{ -webkit-text-size-adjust:100%; }
+  body{
+    margin:0; background:var(--bg); color:var(--body);
+    font-family:"Inter", system-ui, -apple-system, sans-serif;
+    font-size:17px; line-height:1.65; -webkit-font-smoothing:antialiased;
+  }
+  .wrap{ max-width:var(--maxw); margin:0 auto; padding:0 24px; }
+
+  /* ---------- top nav ---------- */
+  nav{ display:flex; gap:26px; align-items:baseline; padding:30px 0 0; font-size:14.5px; letter-spacing:.01em; }
+  nav a{ color:var(--muted); text-decoration:none; }
+  nav a:hover{ color:var(--accent); }
+  nav .home{ color:var(--ink); font-weight:600; margin-right:auto; }
+
+  /* ---------- header ---------- */
+  header{ padding:44px 0 8px; display:flex; flex-direction:row-reverse; gap:34px; align-items:flex-start; }
+  .header-text{ flex:1; min-width:0; }
+  .headshot{
+    width:150px; height:182px; object-fit:cover; object-position:center top;
+    border-radius:8px; flex-shrink:0; background:#eef1f4;
+  }
+  @media (max-width:560px){
+    header{ flex-direction:column; gap:22px; }
+    .headshot{ width:132px; height:160px; }
+  }
+  h1{
+    font-family:"Newsreader", Georgia, serif; font-weight:500;
+    font-size:clamp(34px, 6vw, 46px); line-height:1.1;
+    color:var(--ink); margin:0 0 2px; letter-spacing:-0.01em;
+  }
+  .affil{ color:var(--muted); font-size:16px; margin:6px 0 0; }
+  .affil::before{ content:""; display:block; width:38px; height:3px; background:var(--accent); margin:14px 0; border-radius:2px; }
+
+  .links{ margin:18px 0 0; font-size:15px; display:flex; flex-wrap:wrap; gap:6px 14px; }
+  .links a{ color:var(--accent); text-decoration:none; }
+  .links a:hover{ text-decoration:underline; }
+  .links span{ color:var(--rule); }
+
+  /* ---------- bio ---------- */
+  .bio{ padding:30px 0 8px; }
+  .bio p{ margin:0 0 16px; color:var(--body); }
+  .bio a{ color:var(--accent); text-decoration:none; }
+  .bio a:hover{ text-decoration:underline; }
+  .email{ font-size:15.5px; color:var(--muted); }
+  .email a{ color:var(--accent); text-decoration:none; }
+  .email a:hover{ text-decoration:underline; }
+
+  /* ---------- sections ---------- */
+  section{ padding:26px 0 0; }
+  h2{
+    font-family:"Inter", sans-serif; font-size:13px; font-weight:600;
+    text-transform:uppercase; letter-spacing:.08em; color:var(--muted);
+    margin:0 0 18px; padding-bottom:9px; border-bottom:1px solid var(--rule);
+  }
+  .paper{ margin:0 0 22px; }
+  .paper .title{
+    font-family:"Newsreader", Georgia, serif; font-size:19px; font-weight:600;
+    line-height:1.35; color:var(--ink); text-decoration:none;
+  }
+  .paper a.title:hover{ color:var(--accent); }
+  .paper .meta{ font-size:15px; color:var(--muted); margin-top:2px; }
+  .paper .meta a{ color:var(--accent); text-decoration:none; }
+  .paper .meta a:hover{ text-decoration:underline; }
+  .paper .sub{ font-size:14px; color:var(--muted); margin-top:5px; font-style:italic; }
+
+  /* ---------- footer ---------- */
+  footer{ margin:48px 0 40px; padding-top:20px; border-top:1px solid var(--rule); font-size:13.5px; color:var(--muted); }
+
+  a:focus-visible, nav a:focus-visible{ outline:2px solid var(--accent-lt); outline-offset:3px; border-radius:2px; }
+  @media (prefers-reduced-motion: no-preference){
+    .paper .title{ transition:color .15s ease; }
+    nav a, .links a{ transition:color .15s ease; }
+  }
+</style>
+</head>
+
+<body>
+<div class="wrap">
+
+  <!-- ===================== NAV ===================== -->
+  <nav>
+    <a class="home" href="/">Shuwen Wang</a>
+    <a href="/">About</a>
+    <a href="https://www.dropbox.com/scl/fi/gbkr1gd88bvoq9ogc5jod/CV_ShuwenWang_06062026.pdf?rlkey=mdhw77eoufm49uukrmwk3e3e5&dl=0">CV</a>
+  </nav>
+
+  <!-- ===================== HEADER ===================== -->
+  <header>
+    <!-- Drop your photo at images/shuwen.jpg. If the file is missing, this hides itself. -->
+    <img class="headshot" src="images/shuwen.jpg" alt="Shuwen Wang" onerror="this.style.display='none'">
+
+    <div class="header-text">
+    <h1>Shuwen Wang</h1>
+    <p class="affil">Columbia Business School</p>
+
+    <div class="links">
+      <a href="https://www.dropbox.com/scl/fi/gbkr1gd88bvoq9ogc5jod/CV_ShuwenWang_06062026.pdf?rlkey=mdhw77eoufm49uukrmwk3e3e5&dl=0">Curriculum Vitae</a>
+      <!-- Uncomment when ready:
+      <span>|</span>
+      <a href="https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=YOUR_ID">SSRN</a>
+      <span>|</span>
+      <a href="https://scholar.google.com/citations?user=YOUR_ID">Google Scholar</a>
+      -->
+    </div>
+    </div>
+  </header>
+
+  <!-- ===================== BIO ===================== -->
+  <div class="bio">
+    <p>
+      I am a Ph.D. student in Finance at
+      <a href="https://business.columbia.edu">Columbia Business School</a>.
+      Prior to my Ph.D., I received my Master's degree from
+      <a href="https://mitsloan.mit.edu">MIT Sloan</a> and worked in the
+      finance industry.
+    </p>
+    <p>
+      My research interests are financial intermediation, firm innovation,
+      and credit markets.
+    </p>
+    <p class="email">Email: <a href="mailto:sw3702@columbia.edu">sw3702@columbia.edu</a></p>
+  </div>
+
+  <!-- ===================== WORKING PAPERS ===================== -->
+  <section>
+    <h2>Working Papers</h2>
+
+    <div class="paper">
+      <a class="title" href="https://www.dropbox.com/scl/fi/1l5sbj2okb69n82detd85/MPS_FirmInnovation.pdf?rlkey=vfiay6t70l2n7pc48jmmjxjiu&dl=0">Monetary Tightening and Divergence in Firm Innovation: Who Cuts Back and Who Pushes Forward?</a>
+      <div class="meta">Solo-authored</div>
+      <div class="sub">Lang Entrepreneurship Center Fellowship 2024; Milan Bocconi Economics Workshop 2026; HEC Economics PhD Workshop 2026</div>
+    </div>
+
+    <div class="paper">
+      <span class="title">Who Survives in Private Credit? The Role of PE Experience</span>
+      <div class="meta">with <a href="https://sites.google.com/a/bc.edu/vyacheslav-fos/home">Vyacheslav (Slava) Fos</a></div>
+      <div class="sub">Mitsui Private Capital Symposium 2026</div>
+    </div>
+
+    <div class="paper">
+      <span class="title">State-Contingent Bank-Nonbank Relationship</span>
+      <div class="meta">Solo-authored</div>
+      <div class="sub">Columbia Political Economy Grant 2026; PhD Poster Session</div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer>
+    &copy; Shuwen Wang &middot; Columbia Business School &middot; 2026
+  </footer>
+
+</div>
+</body>
+</html>
