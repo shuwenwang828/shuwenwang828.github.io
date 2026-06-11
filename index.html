@@ -102,6 +102,25 @@
   .paper .meta a:hover{ text-decoration:underline; }
   .paper .sub{ font-size:14px; color:var(--muted); margin-top:5px; font-style:italic; }
 
+  /* ---------- abstract (collapsible) ---------- */
+  .paper details{ margin-top:8px; }
+  .paper summary{
+    display:inline-flex; align-items:center; gap:5px; cursor:pointer;
+    font-size:14px; color:var(--accent); list-style:none; width:max-content;
+    user-select:none;
+  }
+  .paper summary::-webkit-details-marker{ display:none; }
+  .paper summary::before{
+    content:"▸"; font-size:11px; line-height:1;
+    transition:transform .15s ease; display:inline-block;
+  }
+  .paper details[open] summary::before{ transform:rotate(90deg); }
+  .paper summary:hover{ text-decoration:underline; }
+  .paper .abstract{
+    margin:9px 0 0; font-size:15px; line-height:1.6; color:var(--body);
+    padding-left:14px; border-left:2px solid var(--rule); max-width:64ch;
+  }
+
   /* ---------- other / blog ---------- */
   html{ scroll-behavior:smooth; }
   .other-text{ margin:0 0 12px; color:var(--body); font-size:16px; }
@@ -175,18 +194,30 @@
       <a class="title" href="https://www.dropbox.com/scl/fi/1l5sbj2okb69n82detd85/MPS_FirmInnovation.pdf?rlkey=vfiay6t70l2n7pc48jmmjxjiu&dl=0">Monetary Tightening and Divergence in Firm Innovation: Who Cuts Back and Who Pushes Forward?</a>
       <div class="meta">Solo-authored</div>
       <div class="sub">Lang Entrepreneurship Center Fellowship 2024; Milan Bocconi Economics Workshop 2026; HEC Economics PhD Workshop 2026</div>
+      <details>
+        <summary>Abstract</summary>
+        <p class="abstract">[I document that monetary policy exerts heterogeneous impacts on firm innovation efforts, and could contribute to market and R\&D concentration. Controlling for financial constraints and various firm-level characteristics, a 100 basis point rate hike leads firms with 1\% higher existing patent values (innovative firms) to reduce their R\&D spending by 4\% less than firms without patent values (non-innovative firms). This 4\% gap slightly narrows but remains significant at 2.2\% level after 12 quarters. Frontier firms---those generating the highest patent values within their sector---even increase their R\&D spending by 2.2\%, while their peers cut back R\&D by 7.1\% one quarter after the tightening shock, resulting in a clear divergence in R\&D responses. Their sustained R\&D activity is financed through additional equity issuance following the tightening. This divergence primarily stems from innovative firms' high marginal value of R\&D investment. Additionally, innovative firms are particularly sensitive to R\&D cuts, as such reductions may signal them as being non-innovative. When monetary policy raises interest rates, less innovative firms tend to adopt existing technologies due to higher marginal costs, whereas innovative firms persist in developing new ideas. Such monetary tightening further exacerbates the divergence, potentially widening the innovation gap in the future.]</p>
+      </details>
     </div>
 
     <div class="paper">
       <span class="title">Who Survives in Private Credit? The Role of PE Experience</span>
       <div class="meta">with <a href="https://sites.google.com/a/bc.edu/vyacheslav-fos/home">Vyacheslav (Slava) Fos</a></div>
       <div class="sub">Mitsui Private Capital Symposium 2026</div>
+      <details>
+        <summary>Abstract</summary>
+        <p class="abstract">[Paste the abstract for this paper here.]</p>
+      </details>
     </div>
 
     <div class="paper">
       <span class="title">State-Contingent Bank-Nonbank Relationship</span>
       <div class="meta">Solo-authored</div>
       <div class="sub">Columbia Political Economy Grant 2026; PhD Poster Session</div>
+      <details>
+        <summary>Abstract</summary>
+        <p class="abstract">[Paste the abstract for this paper here.]</p>
+      </details>
     </div>
   </section>
 
